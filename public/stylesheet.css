@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    border: 2px blue solid;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px red solid;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    height: 500px;
+}
