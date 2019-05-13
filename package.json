@@ -13,6 +13,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "animejs": "^3.0.1",
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.15.2",
         "chalk-animation": "^1.6.0",
@@ -24,7 +25,10 @@
         "express-handlebars": "^3.0.0",
         "express-session": "^1.14.1",
         "jest": "^24.5.0",
+        "jquery": "^3.4.1",
+        "lodash": "^4.17.11",
         "redis": "^2.6.2",
+        "requirejs": "^2.3.6",
         "spiced-pg": "^1.0.0",
         "supertest": "^4.0.2"
     }

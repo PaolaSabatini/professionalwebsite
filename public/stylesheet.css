@@ -1,9 +1,22 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     border: 2px blue solid;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+    background-color: GRAY;
+    color: white;
 }
 
 /*    -------       MENU      -------          */
@@ -19,6 +32,11 @@ header {
     font-weight: bolder;
     font-family: sans-serif;
 }
+/*    -------       CONTAINER      -------          */
+
+section {
+    margin-top: 100px;
+}
 
 /*    -------       PROJECTS      -------          */
 
@@ -31,7 +49,11 @@ header {
     font-size: 40px;
     font-weight: bolder;
     font-family: sans-serif;
-    height: 500px;
+    height: 600px;
+    opacity: 0.5;
+}
+
+.projectspic {
 }
 
 #petition {
@@ -39,8 +61,7 @@ header {
     background-image: url("/projects/petition.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
-    z-index: 10;
+    height: 600px;
 }
 
 #socialnetwork {
@@ -48,7 +69,7 @@ header {
     background-image: url("/projects/social.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 600px;
     z-index: 10;
 }
 
@@ -57,7 +78,7 @@ header {
     background-image: url("/projects/conectfour.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 600px;
     z-index: 10;
 }
 
@@ -66,7 +87,7 @@ header {
     background-image: url("/projects/imageboard.png");
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 600px;
     z-index: 10;
 }
 
@@ -75,7 +96,7 @@ header {
     background-image: url("/projects/spotify.png");
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 600px;
     z-index: 10;
 }
 
@@ -84,7 +105,7 @@ header {
     background-image: url("/projects/githubapi.png");
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 600px;
     z-index: 10;
 }
 
@@ -93,7 +114,7 @@ header {
     background-image: url("/projects/githubapi.png");
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 600px;
     z-index: 10;
 }
 
@@ -102,7 +123,41 @@ header {
 #contact {
     border: 2px black solid;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+input {
+    height: 40px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+textarea {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.iconimg {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.cont {
+    border: 2px magenta solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }

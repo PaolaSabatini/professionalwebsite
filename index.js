@@ -3,7 +3,6 @@ const app = express();
 const db = require("./db");
 const bodyParser = require("body-parser");
 const chalkAnimation = require("chalk-animation");
-
 const csurf = require("csurf");
 
 app.engine("handlebars", require("express-handlebars")());
@@ -36,8 +35,8 @@ app.use(function(req, res, next) {
 //----------------- MAIN PAGE ------------------//
 
 app.get("/", (req, res) => {
-    res.render("menu", {
-        layout: "main"
+    res.render("homepage", {
+        layout: "home"
     });
 });
 
@@ -62,6 +61,24 @@ app.get("/contact", (req, res) => {
     res.render("contact", {
         layout: "main"
     });
+});
+
+app.post("/contact", (req, res) => {
+    let name = req.body.name;
+    let email = req.body.email;
+    let tel = req.body.tel;
+    let message = req.body.message;
+    console.log(name, email, tel, message);
+    db.addContact(name, email, tel, message)
+        .then(results => {
+            console.log("OK");
+            res.render("thanks", {
+                layout: "main"
+            });
+        })
+        .catch(err => {
+            console.log("Error in addContact", err);
+        });
 });
 //-----------------------------------------------//
 

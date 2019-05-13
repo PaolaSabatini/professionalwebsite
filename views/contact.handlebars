@@ -1,7 +1,26 @@
-<form id="contact">
-    <input name="firstname" type="text" placeholder="First Name">
-    <input name="lastname" type="text" placeholder="Last Name">
-    <input name="email" type="email" placeholder="email">
-    <textarea name="name" rows="8" cols="80"></textarea>
-    <button>Send</button>
-</form>
+<div id="contact">
+    <div id="myinfo">
+        <div class="cont">
+            <img class="iconimg" src="linkedin.png" alt="linkedin logo">
+            <a href="http://www.linkedin.com/in/paola-sabatini">http://www.linkedin.com/in/paola-sabatini</a>
+        </div>
+        <div class="cont">
+            <img class="iconimg" src="github.svg" alt="github logo">
+            <a href="http://www.github.com/PaolaSabatini">http://www.github.com/PaolaSabatini</a>
+        </div>
+        <div class="cont">
+            <img class="iconimg" src="email.png" alt="email logo">
+            <a href="polasabatini@gmail.com">polasabatini@gmail.com</a>
+        </div>
+    </div>
+
+
+    <form action="/contact" method="post">
+        <input name="name" type="text" value="">
+        <input name="email" type="email"  value="">
+        <input name="tel" type="text"  value="">
+        <textarea name="message" rows="8" cols="80" value=""></textarea>
+        <input name='_csrf' value='{{csrfToken}}' type='hidden'>
+        <input id="submit" type="submit" name="submit" value="send">
+    </form>
+</div>
