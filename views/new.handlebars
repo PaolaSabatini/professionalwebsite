@@ -1,0 +1,68 @@
+<section id="home">
+    <h1>Paola Sabatini</h1>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+</section>
+<section class="sticky">
+    <p id="about">"I'm a Brazilian, passionate for coding, living in Berlin."<span></span></p>
+    <img id="sp" src="sp.jpg" alt="Sao Paulo">
+    <img id="berlin" src="berlin.jpg" alt="Sao Paulo">
+    <div id="box"></div>
+</section>
+<section>
+    <p>PROJECTS</p>
+    <div class="projects">
+        <img class="imgproject" id="authors" src="/projects/authors.png" alt="authors">
+        <img class="imgproject" id="canvas" src="/projects/canvas.png" alt="canvas">
+        <img class="imgproject" id="conectfour" src="/projects/conectfour.jpg" alt="conect four">
+        <img class="imgproject" id="githubapi" src="/projects/githubapi.png" alt="github api">
+        <img class="imgproject" id="imageboard" src="/projects/imageboard.png" alt="image board">
+        <img class="imgproject" id="incrementalsearch" src="/projects/incrementalsearch.png" alt="incrementalsearch">
+        <img class="imgproject" id="jsonvalidator" src="/projects/json.png" alt="json validator">
+        <img class="imgproject" id="localstorage" src="/projects/localstorage.png" alt="localstorage">
+        <img class="imgproject" id="petition" src="/projects/petition.jpg" alt="petition">
+        <img class="imgproject" id="resizablepanes" src="/projects/resizablepanes.png" alt="resizablepanes">
+        <img class="imgproject" id="socialnetwork" src="/projects/social.jpg" alt="social network">
+        <img class="imgproject" id="spotify.png" src="/projects/spotify.png" alt="spotify search">
+
+    </div>
+
+</section>
+<section>
+    <h2>contact</h2>
+
+    <div id="contact">
+        <div id="myinfo">
+            <div class="cont">
+                <img class="iconimg" src="linkedin.png" alt="linkedin logo">
+                <a href="http://www.linkedin.com/in/paola-sabatini">http://www.linkedin.com/in/paola-sabatini</a>
+            </div>
+            <div class="cont">
+                <img class="iconimg" src="github.svg" alt="github logo">
+                <a href="http://www.github.com/PaolaSabatini">http://www.github.com/PaolaSabatini</a>
+            </div>
+            <div class="cont">
+                <img class="iconimg" src="email.png" alt="email logo">
+                <a href="polasabatini@gmail.com">polasabatini@gmail.com</a>
+            </div>
+        </div>
+
+
+        <form action="/contact" method="post">
+            <input name="name" type="text" value="">
+            <input name="email" type="email"  value="">
+            <input name="tel" type="text"  value="">
+            <textarea name="message" rows="8" cols="80" value=""></textarea>
+            <input name='_csrf' value='{{csrfToken}}' type='hidden'>
+            <input id="submit" type="submit" name="submit" value="send">
+        </form>
+    </div>
+</section>

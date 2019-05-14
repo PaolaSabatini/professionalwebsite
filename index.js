@@ -40,6 +40,14 @@ app.get("/", (req, res) => {
     });
 });
 
+//----------------- NEW --------------------//
+
+app.get("/new", (req, res) => {
+    res.render("new", {
+        layout: "newlayout"
+    });
+});
+
 //----------------- ABOUT ------------------//
 
 app.get("/about", (req, res) => {
