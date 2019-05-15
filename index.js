@@ -32,46 +32,15 @@ app.use(function(req, res, next) {
     next();
 });
 
-//----------------- MAIN PAGE ------------------//
-
-app.get("/", (req, res) => {
-    res.render("homepage", {
-        layout: "home"
-    });
-});
-
 //----------------- NEW --------------------//
 
-app.get("/new", (req, res) => {
+app.get("/", (req, res) => {
     res.render("new", {
         layout: "newlayout"
     });
 });
 
-//----------------- ABOUT ------------------//
-
-app.get("/about", (req, res) => {
-    res.render("about", {
-        layout: "main"
-    });
-});
-//----------------- PROJECTS ------------------//
-
-app.get("/projects", (req, res) => {
-    res.render("projects", {
-        layout: "main"
-    });
-});
-
-//----------------- CONTACT ------------------//
-
-app.get("/contact", (req, res) => {
-    res.render("contact", {
-        layout: "main"
-    });
-});
-
-app.post("/contact", (req, res) => {
+app.post("/", (req, res) => {
     let name = req.body.name;
     let email = req.body.email;
     let tel = req.body.tel;
@@ -80,9 +49,9 @@ app.post("/contact", (req, res) => {
     db.addContact(name, email, tel, message)
         .then(results => {
             console.log("OK");
-            res.render("thanks", {
-                layout: "main"
-            });
+            // res.render("thanks", {
+            //     layout: "main"
+            // });
         })
         .catch(err => {
             console.log("Error in addContact", err);
