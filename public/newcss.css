@@ -240,7 +240,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: SALMON;
 }
 .principalscontainer {
     display: flex;
@@ -249,7 +248,98 @@ h3 {
     width: 100%;
     height: auto;
     margin: 120px;
-    background-color: aqua;
+}
+
+/* ---------     DESCRIPTION     ---------- */
+
+.wrap-project {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    height: 500px;
+    padding: 20px;
+}
+
+.aboutproject {
+    background-color: yellow;
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    z-index: 100;
+    border-radius: 30px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    visibility: hidden;
+}
+
+.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    border: 2px white solid;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 320px;
+    cursor: pointer;
+}
+
+#aboutsocialnetwork {
+    top: 500%;
+    margin-left: 65%;
+}
+
+#aboutimageboard {
+    top: 590%;
+    margin-left: 65%;
+}
+
+#aboutpetition {
+    top: 690%;
+    margin-left: 65%;
+}
+
+.tta {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #d61d4e;
+    margin-top: 40px;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.part {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+i {
+    margin-left: 10px;
 }
 
 .principalsimage {
@@ -261,6 +351,7 @@ h3 {
     cursor: pointer;
     z-index: 2;
 }
+
 .projecttitle {
     color: white;
     font-family: "Ubuntu", sans-serif;
@@ -275,6 +366,7 @@ h3 {
 #petition {
     margin-left: 90px;
 }
+
 /* -----------      MORE PROJECTS     ----------- */
 
 #pjct {

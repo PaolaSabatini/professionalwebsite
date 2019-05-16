@@ -126,6 +126,7 @@ anime({
 
 var imageprinc = $(".principalsimage");
 var imageproject = $(".imgproject");
+var close = $(".close");
 
 imageprinc.on("mouseenter", function(e) {
     $(e.currentTarget).css("opacity", "1");
@@ -141,4 +142,22 @@ imageproject.on("mouseenter", function(e) {
 
 imageproject.on("mouseleave", function(e) {
     $(e.currentTarget).css("opacity", "0.2");
+});
+
+$("#socialnetworkimage").on("click", function(e) {
+    $("#aboutsocialnetwork").css("visibility", "visible");
+});
+
+$("#imageboardimage").on("click", function(e) {
+    $("#aboutimageboard").css("visibility", "visible");
+});
+
+$("#petitionimage").on("click", function(e) {
+    $("#aboutpetition").css("visibility", "visible");
+});
+
+close.on("click", function(e) {
+    $(e.currentTarget)
+        .closest(".aboutproject")
+        .css("visibility", "hidden");
 });
