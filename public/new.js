@@ -50,78 +50,15 @@ function updatePercentage() {
 
 ///////////////////////////////////////////////////
 
-// var timeline = new TimelineMax({ onupdate: updatePercentage });
-//
-// var bar1 = document.getElementById("barJS");
-// var bar2 = document.getElementById("barCSS");
-// var bar3 = document.getElementById("barjquery");
-// var bar4 = document.getElementById("barvue");
-// var bar5 = document.getElementById("barreact");
-// var bar6 = document.getElementById("barredux");
-// var bar7 = document.getElementById("baranime");
-// var bar8 = document.getElementById("barscroll");
-//
-// timeline.from(bar1, 1, { height: "60%" });
-// timeline.from(bar2, 1, { height: "100%" });
-// timeline.from(bar3, 1, { height: "20%" });
-// timeline.from(bar4, 1, { height: "60%" });
-// timeline.from(bar5, 1, { height: "90%" });
-// timeline.from(bar6, 1, { height: "30%" });
-// timeline.from(bar7, 1, { height: "70%" });
-// timeline.from(bar8, 1, { height: "10%" });
-//
-// var scene3 = new ScrollMagic.Scene({
-//     triggerElement: ".skills",
-//     triggerHook: "onEnter",
-//     duration: "100%"
-// })
-//     .setPin(".skills")
-//     .setTween(timeline)
-//     .addTo(controller);
+var skills = $(".skills");
 
-// var frontend = getElementById('id')
-
-anime({
-    targets: "#barJS",
-    height: "60%",
-    easing: "easeInOutQuad"
-});
-anime({
-    targets: "#barCSS",
-    height: "70%",
-    easing: "easeInOutQuad"
-});
-anime({
-    targets: "#barjquery",
-    height: "50%",
-    easing: "easeInOutQuad"
-});
-anime({
-    targets: "#barvue",
-    height: "40%",
-    easing: "easeInOutQuad"
-});
-anime({
-    targets: "#barreact",
-    height: "60%",
-    easing: "easeInOutQuad"
-});
-anime({
-    targets: "#barredux",
-    height: "40%",
-    easing: "easeInOutQuad"
-});
-anime({
-    targets: "#baranime",
-    height: "70%",
-    easing: "easeInOutQuad"
-});
-anime({
-    targets: "#barscroll",
-    height: "50%",
-    easing: "easeInOutQuad"
+skills.on("mouseenter", function(e) {
+    $(".frontend").css("opacity", "1");
 });
 
+skills.on("mouseenter", function(e) {
+    $(".backend").css("opacity", "1");
+});
 ///////////// ANIMATION PROJECTS --- PRINCIPALS   ////////////
 
 var imageprinc = $(".principalsimage");

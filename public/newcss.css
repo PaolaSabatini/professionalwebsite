@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 /*        -------     MAIN      --------       */
@@ -20,7 +21,7 @@ body {
     background-color: white;
 }
 
-svg {
+#paola {
     position: absolute;
     top: 25%;
     left: 15%;
@@ -29,7 +30,7 @@ svg {
 path {
     stroke: #d61d4e;
     fill: #fff;
-    stroke-dasharray: 1000;
+    stroke-dasharray: 1900;
     opacity: 10;
     animation: animate 5s cubic-bezier(0, 0.23, 1, 0.1);
 }
@@ -38,12 +39,12 @@ path {
     0% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 1000;
+        stroke-dashoffset: 1900;
     }
     30% {
         opacity: 10;
         fill: none;
-        stroke-dashoffset: 1000;
+        stroke-dashoffset: 1900;
     }
     90% {
         fill: rgba(255, 255, 255, 0);
@@ -123,7 +124,7 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .wordbackground {
@@ -141,7 +142,9 @@ span {
     justify-content: space-around;
     height: 300px;
     width: 1200px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: 3s ease;
 }
 .backend {
     display: flex;
@@ -150,13 +153,14 @@ span {
     justify-content: space-around;
     height: 300px;
     width: 1200px;
-    margin-top: 40px;
+    opacity: 0;
+    transition: 3s ease;
 }
 
 .bar {
+    border: 4px solid #d61d4e;
     background-color: white;
-    height: 100%;
-    width: 50px;
+    width: 30px;
 }
 
 h3 {
@@ -174,46 +178,58 @@ h3 {
     color: #efecec;
 }
 
-.line {
-    width: 100%;
-    background-color: #d61d4e;
-    display: block;
-    height: 5px;
-}
 .column {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 300px;
+    height: 250px;
     width: 100px;
 }
 
 #barJS {
-    height: 100px;
+    height: 170px;
 }
 #barCSS {
-    height: 100px;
+    height: 200px;
 }
 #barjquery {
-    height: 100px;
+    height: 150px;
 }
 #barvue {
-    height: 100px;
+    height: 90px;
 }
 #barreact {
-    height: 100px;
+    height: 120px;
 }
 #barredux {
-    height: 100px;
+    height: 60px;
 }
 #baranime {
-    height: 100px;
-}
-#barscroll {
-    height: 100px;
+    height: 120px;
 }
 
+#barnode {
+    height: 120px;
+}
+#barexpress {
+    height: 130px;
+}
+#barpostgres {
+    height: 160px;
+}
+#barsocket {
+    height: 60px;
+}
+#barsql {
+    height: 120px;
+}
+#bargit {
+    height: 100px;
+}
+#baramazons3 {
+    height: 70px;
+}
 /* -------------     PROJECTS     ------------ */
 
 .projects {
@@ -290,17 +306,17 @@ h3 {
 }
 
 #aboutsocialnetwork {
-    top: 500%;
+    top: 480%;
     margin-left: 65%;
 }
 
 #aboutimageboard {
-    top: 590%;
+    top: 575%;
     margin-left: 65%;
 }
 
 #aboutpetition {
-    top: 690%;
+    top: 670%;
     margin-left: 65%;
 }
 
@@ -324,6 +340,10 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+#techimageboard {
 }
 
 h4 {
@@ -346,7 +366,7 @@ i {
     border-radius: 5px;
     height: 100%;
     width: 60%;
-    opacity: 0.2;
+    opacity: 0.1;
     transition: 0.8s ease;
     cursor: pointer;
     z-index: 2;
@@ -396,13 +416,30 @@ i {
     cursor: pointer;
 }
 
+.pjctname {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    font-weight: 900;
+}
+
 #authors {
     margin-left: 3%;
+}
+#authorsname {
+    margin-left: 11%;
+    margin-top: 10%;
 }
 
 #conectfour {
     margin-left: 30%;
     margin-top: 10%;
+    width: 450px;
+}
+#conectfourname {
+    margin-left: 42%;
+    margin-top: 20%;
     width: 450px;
 }
 
@@ -411,10 +448,20 @@ i {
     margin-top: 30%;
     width: 450px;
 }
+#spotifyname {
+    margin-left: 19%;
+    margin-top: 40%;
+    width: 450px;
+}
 
 #resizablepanes {
     margin-left: 60%;
     margin-top: 0%;
+    width: 450px;
+}
+#resizablename {
+    margin-left: 70%;
+    margin-top: 10%;
     width: 450px;
 }
 
@@ -423,10 +470,20 @@ i {
     margin-top: 25%;
     width: 450px;
 }
+#localname {
+    margin-left: 79%;
+    margin-top: 34%;
+    width: 450px;
+}
 
 #githubapi {
     margin-left: 40%;
     margin-top: 35%;
+    width: 450px;
+}
+#githubname {
+    margin-left: 52%;
+    margin-top: 45%;
     width: 450px;
 }
 
@@ -435,12 +492,23 @@ i {
     margin-top: 54%;
     width: 450px;
 }
+#jsonname {
+    margin-left: 69%;
+    margin-top: 64%;
+    width: 450px;
+}
 
 #incrementalsearch {
     margin-left: 2%;
     margin-top: 50%;
     width: 450px;
 }
+#incrementalname {
+    margin-left: 10%;
+    margin-top: 60%;
+    width: 450px;
+}
+
 /* ------------    CONTACT      ---------- */
 .ctct {
     display: flex;
@@ -517,4 +585,35 @@ a {
     font-family: "Ubuntu", sans-serif;
     color: black;
     font-size: 20px;
+}
+
+/* THANK YOU  */
+
+#thanks {
+    height: 100vh;
+    width: 100%;
+}
+
+.wordbackgroundtks {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
+    color: gray;
+    font-size: 300px;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    z-index: 10000000000;
+}
+
+#svgtks {
+    top: 0;
+    left: 0;
+    fill: rgba(255, 255, 255, 0.4);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
 }

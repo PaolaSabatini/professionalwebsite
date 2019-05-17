@@ -49,14 +49,24 @@ app.post("/", (req, res) => {
     db.addContact(name, email, tel, message)
         .then(results => {
             console.log("OK");
-            // res.render("thanks", {
-            //     layout: "main"
-            // });
+            res.render("thanks", {
+                layout: "tks"
+            });
         })
         .catch(err => {
             console.log("Error in addContact", err);
         });
 });
+
+//------------------THANKS-----------------------//
+
+app.get("/thanks", (req, res) => {
+    console.log("GET THANKS");
+    res.render("thanks", {
+        layout: "tks"
+    });
+});
+
 //-----------------------------------------------//
 
 if (require.main == module) {
